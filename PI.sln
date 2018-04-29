@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI.Web", "PI.Web\PI.Web.csproj", "{38D84727-92C6-4C47-9C21-54340DDF80A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI.Logica", "PI.Logica\PI.Logica.csproj", "{E04EFFF6-232E-451F-BAFE-A5A2ACDE1E94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI.Ws", "PI.Ws\PI.Ws.csproj", "{1CA1EB89-A434-454D-AE3A-E6250A990EF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{38D84727-92C6-4C47-9C21-54340DDF80A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38D84727-92C6-4C47-9C21-54340DDF80A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D84727-92C6-4C47-9C21-54340DDF80A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04EFFF6-232E-451F-BAFE-A5A2ACDE1E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04EFFF6-232E-451F-BAFE-A5A2ACDE1E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04EFFF6-232E-451F-BAFE-A5A2ACDE1E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04EFFF6-232E-451F-BAFE-A5A2ACDE1E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA1EB89-A434-454D-AE3A-E6250A990EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA1EB89-A434-454D-AE3A-E6250A990EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA1EB89-A434-454D-AE3A-E6250A990EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA1EB89-A434-454D-AE3A-E6250A990EF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
