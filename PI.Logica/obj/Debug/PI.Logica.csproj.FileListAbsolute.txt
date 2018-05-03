@@ -1,0 +1,5 @@
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Logica\bin\Debug\PI.Logica.dll
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Logica\bin\Debug\PI.Logica.pdb
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Logica\obj\Debug\PI.Logica.csprojResolveAssemblyReference.cache
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Logica\obj\Debug\PI.Logica.dll
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Logica\obj\Debug\PI.Logica.pdb

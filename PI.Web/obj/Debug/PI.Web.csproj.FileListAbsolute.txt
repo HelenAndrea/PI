@@ -1,0 +1,8 @@
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\bin\PI.Web.dll
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\bin\PI.Web.pdb
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\bin\PI.Logica.dll
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\bin\PI.Logica.pdb
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\obj\Debug\PI.Web.csprojResolveAssemblyReference.cache
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\obj\Debug\PI.Web.dll
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\obj\Debug\PI.Web.pdb
+C:\Users\Hellen\Documents\Visual Studio 2012\Projects\PI\PI.Web\bin\AjaxControlToolkit.dll

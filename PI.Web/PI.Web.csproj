@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\Downloads\Proyecto\Proyecto.Web\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -57,12 +62,183 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\sb-admin.css" />
+    <Content Include="css\sb-admin.min.css" />
+    <Content Include="css\sweetalert.css" />
+    <Content Include="Images\dsantafe%40gmail.com.jpg" />
+    <Content Include="js\sb-admin-charts.js" />
+    <Content Include="js\sb-admin-charts.min.js" />
+    <Content Include="js\sb-admin-datatables.js" />
+    <Content Include="js\sb-admin-datatables.min.js" />
+    <Content Include="js\sb-admin.js" />
+    <Content Include="js\sb-admin.min.js" />
+    <Content Include="js\sweetalert.min.js" />
+    <Content Include="Resources\Images\Edit.gif" />
+    <Content Include="Resources\Images\Fondo.gif" />
+    <Content Include="Resources\Images\remover.gif" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="vendor\chart.js\Chart.js" />
+    <Content Include="vendor\chart.js\Chart.min.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Views\Adopciones\Adopciones.aspx" />
+    <Content Include="Views\CrearCuenta\CrearCuenta.aspx" />
+    <Content Include="Views\Historial\Historial.aspx" />
+    <Content Include="Views\Index\Index.aspx" />
+    <Content Include="Views\Login\Login.aspx" />
+    <Content Include="Views\Mascota\Mascota.aspx" />
+    <Content Include="Views\Raza\Raza.aspx" />
+    <Content Include="Views\RecuperarPassword\RecuperarPassword.aspx" />
+    <Content Include="Views\TipoMascota\TipoMascota.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AcopcionesController.cs" />
+    <Compile Include="Controllers\CrearCuentaController.cs" />
+    <Compile Include="Controllers\HistorialController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MascotaController.cs" />
+    <Compile Include="Controllers\RazaController.cs" />
+    <Compile Include="Controllers\RecuperarPasswordController.cs" />
+    <Compile Include="Controllers\TipoMascotaCcontroller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Template\Template.Master.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\Template\Template.Master.designer.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Adopciones\Adopciones.aspx.cs">
+      <DependentUpon>Adopciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Adopciones\Adopciones.aspx.designer.cs">
+      <DependentUpon>Adopciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CrearCuenta\CrearCuenta.aspx.cs">
+      <DependentUpon>CrearCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CrearCuenta\CrearCuenta.aspx.designer.cs">
+      <DependentUpon>CrearCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Historial\Historial.aspx.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Historial\Historial.aspx.designer.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Index\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Index\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mascota\Mascota.aspx.cs">
+      <DependentUpon>Mascota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Mascota\Mascota.aspx.designer.cs">
+      <DependentUpon>Mascota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Raza\Raza.aspx.cs">
+      <DependentUpon>Raza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Raza\Raza.aspx.designer.cs">
+      <DependentUpon>Raza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecuperarPassword\RecuperarPassword.aspx.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RecuperarPassword\RecuperarPassword.aspx.designer.cs">
+      <DependentUpon>RecuperarPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TipoMascota\TipoMascota.aspx.cs">
+      <DependentUpon>TipoMascota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TipoMascota\TipoMascota.aspx.designer.cs">
+      <DependentUpon>TipoMascota.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Template\Template.Master" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome\less\animated.less" />
+    <Content Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendor\font-awesome\less\core.less" />
+    <Content Include="vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="vendor\font-awesome\less\icons.less" />
+    <Content Include="vendor\font-awesome\less\larger.less" />
+    <Content Include="vendor\font-awesome\less\list.less" />
+    <Content Include="vendor\font-awesome\less\mixins.less" />
+    <Content Include="vendor\font-awesome\less\path.less" />
+    <Content Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="vendor\font-awesome\less\stacked.less" />
+    <Content Include="vendor\font-awesome\less\variables.less" />
+    <Content Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendor\font-awesome\scss\_core.scss" />
+    <Content Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="vendor\font-awesome\scss\_list.scss" />
+    <Content Include="vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendor\font-awesome\scss\_path.scss" />
+    <Content Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -71,8 +247,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Views\" />
+    <Folder Include="tmp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PI.Logica\PI.Logica.csproj">
+      <Project>{e04efff6-232e-451f-bafe-a5a2acde1e94}</Project>
+      <Name>PI.Logica</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
